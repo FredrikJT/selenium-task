@@ -11,10 +11,12 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 from selenium.common.exceptions import TimeoutException
+from credentials import Credentials
+import time
 
 
 #Initiate browser and navigate to sprint
-browser = webdriver.Firefox()
+browser = webdriver.Chrome()
 url = "https://sprint.tobiipro.com"
 browser.get(url)
 
@@ -23,16 +25,28 @@ delay = 5
 
 #Try to load page. If not done within delay, throw exception
 try:
-    login_element = WebDriverWait(browser, delay).until(EC.presence_of_element_located((By.NAME, 'email')))
+    email_element = WebDriverWait(browser, delay).until(EC.presence_of_element_located((By.NAME, 'email')))
     
 except TimeoutException:
     print("The webpage {} did not load within {} seconds".format(url, delay))
     
 
+#Import credentials from local file
+myCredentials = Credentials()
 
-#TODO: Log in using the credentials
 
-#TODO: Import credentials from local file
+#Wait until field is ready to be clickable
+WebDriverWait(browser, 10).until(EC.element_to_be_clickable((By.NAME, 'email')))
+
+#Enter credentials into fields
+email_element.send_keys(myCredentials.username)
+password_element = browser.find_element_by_name('password')
+password_element.send_keys(myCredentials.password)
+
+#Click login
+submit_button = browser.find_element_by_name('submit')
+submit_button.click()
+
 
 #TODO: Verify that the log in was successful
 
