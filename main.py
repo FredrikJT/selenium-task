@@ -49,4 +49,18 @@ submit_button.click()
 assert "Tobii Pro Sprint" in browser.title
 
 
+#FIXME: I don't work from here
+#Wait until userbar has loaded
+try:
+    userbar = WebDriverWait(browser, delay).until(EC.text_to_be_present_in_element((By.LINK_TEXT, 'Sprint Test'))) 
+    
+except TimeoutException:
+    print("The webpage did not load within {} seconds".format(delay))
+    
+#userbar = browser.find_element_by_class_name('gs-userbar__username')
+userbar.click
+logout_element = browser.find_element_by_class_name('gs-dropdown__item-btn-logout')
+logout_element.click
+
+
 #TODO: Log out
