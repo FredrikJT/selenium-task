@@ -12,7 +12,6 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 from selenium.common.exceptions import TimeoutException
 from credentials import Credentials
-import time
 
 
 #Initiate browser and navigate to sprint
@@ -34,7 +33,6 @@ except TimeoutException:
 #Import credentials from local file
 myCredentials = Credentials()
 
-
 #Wait until field is ready to be clickable
 WebDriverWait(browser, 10).until(EC.element_to_be_clickable((By.NAME, 'email')))
 
@@ -47,7 +45,8 @@ password_element.send_keys(myCredentials.password)
 submit_button = browser.find_element_by_name('submit')
 submit_button.click()
 
+#Verify that the log in was sucessful by checking that the correct page name exist
+assert "Tobii Pro Sprint" in browser.title
 
-#TODO: Verify that the log in was successful
 
 #TODO: Log out
