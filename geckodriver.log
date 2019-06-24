@@ -201,39 +201,28 @@ console.error: BroadcastService:
   Stack:
     remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:203:13
 
-ension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
-1560877777093	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
-1560877778768	Marionette	INFO	Listening on port 54900
-1560877778845	Marionette	WARN	TLS certificate errors will be ignored for this session
-console.error: BroadcastService: 
-  receivedBroadcastMessage: handler for
-  remote-settings/monitor_changes
-  threw error:
-  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221560618350307%22 is not a valid URL..
-  Stack:
-    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:203:13
+[Parent 14576, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1560820494/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 11668, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1560820494/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 11668, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1560820494/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Parent 14576, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1560820494/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 3124, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1560820494/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 3124, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1560820494/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Parent 14576, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1560820494/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 1124, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1560820494/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 1124, Chrom1560928873463	Marionette	INFO	Stopped listening on port 53793
 
-console.error: BroadcastService: 
-  receivedBroadcastMessage: handler for
-  remote-settings/monitor_changes
-  threw error:
-  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221560878717273%22 is not a valid URL..
-  Stack:
-    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:203:13
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
 
-s will be ignored for this session
-JavaScript warning: https://sprint.tobiipro.com/files_1.0.5-hotfix.4_4dde59d_190503_133734/share/share.bundle.js, line 1757: Error: WebGL warning: drawArrays: Drawing to a destination rect smaller than the viewport rect. (This warning will only be given once)
-IPDL protocol error: Handler returned error code!
+ild/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 37724, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1560820494/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Parent 43832, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1560820494/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 8768, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1560820494/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 8768, Chrome_ChildThread] WARNING: pipe [Parent 43832, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1560820494/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+1560928873454	Marionette	INFO	Stopped listening on port 54900
 
-###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
 
-IPDL protocol error: Handler returned error code!
-
-###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
-
-IPDL protocol error: Handler returned error code!
-
-###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+ed false (indicating failure)
 
 IPDL protocol error: Handler returned error code!
 
@@ -310,24 +299,27 @@ console.error: BroadcastService:
   Stack:
     remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:203:13
 
-ension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
-1560878403536	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
-1560878405470	Marionette	INFO	Listening on port 60408
-1560878405600	Marionette	WARN	TLS certificate errors will be ignored for this session
-JavaScript warning: https://sprint.tobiipro.com/files_1.0.5-hotfix.4_4dde59d_190503_133734/share/share.bundle.js, line 1757: Error: WebGL warning: drawArrays: Drawing to a destination rect smaller than the viewport rect. (This warning will only be given once)
-console.error: BroadcastService: 
-  receivedBroadcastMessage: handler for
-  remote-settings/monitor_changes
-  threw error:
-  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221560878717273%22 is not a valid URL..
-  Stack:
-    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:203:13
+[Parent 35540, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1560820494/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Parent 35540, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1560820494/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 6724, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1560820494/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 42000, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1560820494/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 42000, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1560820494/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Parent 35540, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1560820494/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+1560928873457	Marionette	INFO	Stopped listening on port 59977
 
-ension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
-1560878467177	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
-1560878468926	Marionette	INFO	Listening on port 60966
-1560878469265	Marionette	WARN	TLS certificate errors will be ignored for this session
-JavaScript warning: https://sprint.tobiipro.com/files_1.0.5-hotfix.4_4dde59d_190503_133734/share/share.bundle.js, line 1757: Error: WebGL warning: drawArrays: Drawing to a destination rect smaller than the viewport rect. (This warning will only be given once)
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[GPU 39420, Chrome_ChildThread] WARNING: pipe error: 109: 
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 41600, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1560820494/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Parent 37684, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1560820494/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+1560928873435	Marionette	INFO	Stopped listening on port 60408
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+rawArrays: Drawing to a destination rect smaller than the viewport rect. (This warning will only be given once)
 JavaScript warning: https://sprint.tobiipro.com/files_1.0.5-hotfix.4_4dde59d_190503_133734/share/share.bundle.js, line 1757: Error: WebGL warning: drawArrays: Drawing to a destination rect smaller than the viewport rect. (This warning will only be given once)
 [Parent 23840, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1560820494/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
 [Child 24540, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1560820494/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341

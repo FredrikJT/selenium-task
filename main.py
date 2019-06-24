@@ -6,7 +6,6 @@ Created on Tue Jun 18 17:54:26 2019
 """
 
 from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
@@ -48,19 +47,57 @@ submit_button.click()
 #Verify that the log in was sucessful by checking that the correct page name exist
 assert "Tobii Pro Sprint" in browser.title
 
-
-#FIXME: I don't work from here
-#Wait until userbar has loaded
+#Find userbar    
 try:
-    userbar = WebDriverWait(browser, delay).until(EC.text_to_be_present_in_element((By.LINK_TEXT, 'Sprint Test'))) 
+    userbar = WebDriverWait(browser, delay).until(EC.visibility_of_element_located((By.CLASS_NAME, 'gs-userbar__username'))) 
     
 except TimeoutException:
-    print("The webpage did not load within {} seconds".format(delay))
+    print("The userbar element did not load within {} seconds".format(delay))
     
-#userbar = browser.find_element_by_class_name('gs-userbar__username')
-userbar.click
-logout_element = browser.find_element_by_class_name('gs-dropdown__item-btn-logout')
-logout_element.click
+#Click to show dropdown
+userbar.click()
+
+#Find logout element
+try:
+    logout_element = WebDriverWait(browser, delay).until(EC.visibility_of_element_located((By.CLASS_NAME, 'gs-dropdown__item-btn-logout')))
+    
+except TimeoutException:
+    print("The logout element did not load within {} seconds".format(delay))
+
+#Click logout button
+logout_element.click()
 
 
-#TODO: Log out
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
